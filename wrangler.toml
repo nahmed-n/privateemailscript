@@ -1,0 +1,29 @@
+name = "json-email-automation"
+main = "Worker Automation Testing.py"
+compatibility_date = "2024-01-01"
+
+
+account_id = "nabilfouad786" 
+
+
+API_KEY = "46af576afb95960a9677a3a1be35ba893df02"
+
+
+compatibility_flags = ["python_workers"]
+
+
+
+[build]
+command = ""
+
+[vars]
+ENVIRONMENT = "production"
+
+[env.production]
+name = "json-email-automation-prod"
+route = "true"  
+[env.development]
+name = "json-email-automation-dev"
+
+[triggers]
+crons = ["*/30 * * * *"]  # Runs every 30 minutes
